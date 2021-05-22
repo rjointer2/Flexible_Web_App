@@ -1,0 +1,80 @@
+
+Stack
+_____________________________________________________
+
+Material UI, React, Redux, React-Redux, React-Thunk, React-Router
+
+Express, Express-Session, Cookie-Parser, GraphQL, Express-GraphQL, Body-Parser
+
+JWT, SocketIO, Brcypt
+
+MongoDB, Mongoose
+
+
+
+Front End UI/UX Logic
+_____________________________________________________
+
+Sign In, Sign Up, Forgot Password, 
+
+Create Site, Site Configs, 
+
+
+Status Key Map
+
+-> ASSIGNED  @ ONGOING  $ Completed
+
+Site Pages
+_____________________________________________________
+
+Sidebar
+_____________________________________________________
+
+-> Navbar
+-> Navbar with search, notifications
+-> Mobile Responsive
+
+Home
+
+-> Generic Home, Simple Overview of Employee's Status
+-> Display Hours, NCNS, Money Made that week, FTE, Department
+
+Schedule
+
+-> Use some calender library to get monthtly calender with dates they work
+-> Changes when they shift update 
+-> Have a 1 week out Schedule
+-> Have a 2 week out Schedule
+-> When the day is clicked can request to post shift, call out, or request
+    to take a shift
+
+
+Shifts
+
+-> Live update of the shift posted 
+-> When clicked it shown full detailed
+-> Can remove/add shift from/to "cart"
+-> Send Cart to HR for Approval
+
+Chatroom
+
+->  
+->
+->
+->
+->
+->
+->
+->
+
+
+Edit Profile
+
+->
+->
+->
+->
+->
+->
+->
+->
