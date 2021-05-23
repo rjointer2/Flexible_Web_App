@@ -1,19 +1,27 @@
 
 
-Stack
+# Stack
 _____________________________________________________
+
+Front End 
 
 Material UI, React, Redux, React-Redux, React-Thunk, React-Router
 
+Middleware and Server
+
 Express, Express-Session, Cookie-Parser, GraphQL, Express-GraphQL, Body-Parser
 
-JWT, SocketIO, Brcypt
+Auth
+
+JWT, SocketIO, Brcypt, AWS 
+
+Database
 
 MongoDB, Mongoose
 
 
 
-Front End UI/UX Logic
+# Front End UI/UX Logic
 _____________________________________________________
 
 Sign In, Sign Up, Forgot Password, 
@@ -21,11 +29,11 @@ Sign In, Sign Up, Forgot Password,
 Create Site, Site Configs, 
 
 
-Status Key Map
+## Status Key Map
 
 -> ASSIGNED  @ ONGOING  $ Completed
 
-Site Pages
+## Site Pages
 _____________________________________________________
 
 Sidebar
@@ -59,23 +67,28 @@ Shifts
 
 Chatroom
 
-->  
-->
-->
-->
-->
-->
-->
-->
+->  Create new room, creates a new room with the users
+
 
 
 Edit Profile
 
-->
-->
-->
-->
-->
-->
-->
-->
+-> Edit avaiblity 
+-> Fix a punch 
+-> Request Time off
+
+Admin
+_____________________________________________________
+
+-> Make a store, make a store key, make a Manager key for Manager
+-> Can edit all employees and Manager
+-> Give Manager tasks and etc
+
+Manager 
+
+_____________________________________________________
+
+-> Edit Schedule
+-> Approve Schedule
+-> Remove Employee ( and remove their shifts and etc )
+
