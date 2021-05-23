@@ -1,0 +1,30 @@
+{
+  "name": "PostShift",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:production",
+    "start:production": "cd backend && npm start",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "cd backend && npm install && cd ../client && npm install",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjointer2/Flexible_Web_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjointer2/Flexible_Web_App/issues"
+  },
+  "homepage": "https://github.com/rjointer2/Flexible_Web_App#readme",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "if-env": "^1.0.4"
+  }
+}
