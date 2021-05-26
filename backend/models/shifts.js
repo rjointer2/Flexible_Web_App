@@ -15,7 +15,7 @@ const shiftSchema = new Schema({
         type: String,
         require: true
     },
-    author: {
+    createdBy: {
         type: Schema.Types.ObjectId,
         ref: 'User'
     },

@@ -25,7 +25,7 @@ const userSchema = new Schema({
         type: String,
         require: true
     },
-    cart:[
+    postingShift:[
         {
             type: Schema.Types.ObjectId,
             ref: 'Shift',
