@@ -6,10 +6,9 @@ const Shift = require('../../models/shifts');
 
 // resolver helper functions
 
-const getUserByID = userID => {
-    return Users.findById(userID).then(user => {
-        // here we will return a object of the accessable properties 
-        // the user object found
+const getUserByID = async userID => {
+    try {
+        const user = Users.findById(userID);
         return {
             ...user,
             _id: user.id,
@@ -18,23 +17,28 @@ const getUserByID = userID => {
             username: user.username,
             postingShifts: getShiftByID.bind(this, user.postingShifts),
         }
-    }).catch(err => {
+
+    } catch (err) {
         throw err
-    }) 
+    }
 }
 
-const getShiftByID = shiftID => {
-    return Shift.find({
-        _id: { $in: shiftID }
-    }).then(shiftItem => {
-        return shiftItem.map(shift => {
+const getShiftByID = async shiftID => {
+
+    const shift = await Shift.find({  _id: { $in: shiftID }})
+
+    try {
+        shift.map( shiftItem => {
             return {
-                ...shift,
-                _id: shift.id,
-                createdBy: getshiftByID.bind(this, shift.createdBy)
+                ...shiftItem,
+                _id: shiftItem.id,
+                createdBy: getUserByID.bind(this, shiftItem.createdBy)
             }
         })
-    })
+    } catch(err) {
+        throw err
+    }
+
 }
 
 module.exports = {
