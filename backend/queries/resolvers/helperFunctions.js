@@ -7,8 +7,11 @@ const Shift = require('../../models/shifts');
 // resolver helper functions
 
 const getUserByID = async userID => {
+
+    const user = await Users.findById(userID);
+
     try {
-        const user = Users.findById(userID);
+        console.log(user._doc)
         return {
             ...user,
             _id: user.id,
@@ -20,7 +23,7 @@ const getUserByID = async userID => {
 
     } catch (err) {
         throw err
-    }
+    } 
 }
 
 const getShiftByID = async shiftID => {
@@ -38,7 +41,6 @@ const getShiftByID = async shiftID => {
     } catch(err) {
         throw err
     }
-
 }
 
 module.exports = {
