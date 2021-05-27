@@ -28,8 +28,7 @@ const userSchema = new Schema({
     postingShift:[
         {
             type: Schema.Types.ObjectId,
-            ref: 'Shift',
-            require: false
+            ref: 'Shift'
         }
     ],
     company: {

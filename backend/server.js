@@ -42,5 +42,3 @@ mongoose.connect(`mongodb+srv://${process.env.UN}:${process.env.PW}@postshiftapp
 }).catch(err => {
     console.log('oh no')
 });
-
-console.log(process.env.DB)

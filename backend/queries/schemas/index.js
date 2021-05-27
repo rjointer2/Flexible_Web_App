@@ -27,7 +27,6 @@ module.exports = buildSchema(`
     input ShiftInput {
         time: String!
         day: String!
-        createdBy: String!
         department: String!
         attendence: String!
         employee: String!
