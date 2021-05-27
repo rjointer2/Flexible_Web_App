@@ -22,6 +22,7 @@ module.exports = buildSchema(`
         schedule: String!
         company: String!
         manager: String!
+        department: String!
     }
 
     input ShiftInput {
