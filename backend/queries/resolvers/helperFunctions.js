@@ -13,6 +13,7 @@ const getUserByID = async userID => {
     try {
         console.log(user._doc)
         return {
+            // we may have to add new copies of the user's properties
             ...user,
             _id: user.id,
             firstname: user.firstname,

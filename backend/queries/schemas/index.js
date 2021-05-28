@@ -1,6 +1,8 @@
 
 const {buildSchema} = require('graphql');
 
+// for right now this is okay because the schema is so small
+
 module.exports = buildSchema(`
     type Shift {
         _id: ID!
